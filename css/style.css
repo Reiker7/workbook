@@ -13,12 +13,11 @@
 
 :root {
     --bg-color:#3B5372;
-    /* --bg-color:#1f242d; */
+    --third-bg-color:#7d89a3;
     --second-bg-color:#657ba1;
-    /* --second-bg-color:#323946; */
     --text-color:#fff;
     --main-color:#b4cce6;
-    /* --main-color:#0ef; */
+    
     
 
 }
@@ -238,6 +237,7 @@ span {
 
 .skills {
     padding-top: 25vh;
+    
 }
 
 .skills h2 {
@@ -254,9 +254,9 @@ span {
 
 .skills-container .skills-box {
     flex: 1 1 30rem;
-    background: var(--second-bg-color);
+    background: linear-gradient(180deg, var(--bg-color), var(--third-bg-color));
     padding: 4rem 2rem 4rem;
-    border-radius: 2rem;
+    border-radius:  2rem;
     text-align: center;
     border: .2rem solid var(--bg-color);
     transition: .5s ease;
