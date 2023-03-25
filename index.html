@@ -1,75 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi portafolio</title>
-    <link rel="stylesheet" href="index.css">
-    <link  rel="icon"   href="media/favicon1.png" />
+    <title>Mi porfolio</title>
+    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
-        <div class="container">
-             <p class="logo">Rufino PC</p>
-             <nav>
-                <a href="#hero">Git</a>
-                 <a href="#videojuego">Videojuego</a>
-                 <a href="#lolweb">League of Legends</a>
-                 <a href="#tratravel">Tratravel</a>
-             </nav>
-        </div> 
+    <!-- header  -->
+    <header class="header">
+        <a href="#" class="logo"><span>Mi</span> porfolio</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Inicio</a>
+            <a href="#about">Acerca de</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#porfolio">Proyectos</a>
+            <a href="#contact">Contacto</a>
+        </nav>
     </header>
+
+    <!-- home -->
+   
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hola, me llamo</h3>
+            <h1>Rufino Polvillo Caliani</h1>
+            <h3>Y soy <span>Desallor web Full Stack</span></h3>
+            <p>Un apasionado desarrollador <strong>Mern</strong> , con sede en Sevilla</p>
+            <div class="social-media">
+                <a href="https://www.thebridge.tech/" target="_blank"><i class='bx bxs-graduation'></i></a>
+                <a href="https://youtu.be/wuqL6MZv2i8" target="_blank"><i class='bx bxl-youtube'></i></a>
+                <a href="https://github.com/Reiker7" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/rufino-polvillo-caliani/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="/assets/download/cvRufino.pdf" download class="btn">Descargar CV</a>
+            </div>
+            <div class="tech">
+                <img src="assets/vector/css.svg">
+                <img src="assets/vector/html.svg">
+                <img src="assets/vector/js.svg">
+                <img src="assets/vector/nodejs-.svg">
+                <img src="assets/vector/mongodb.svg">
+                <img src="assets/vector/react.svg">
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="assets/img/homeFS.png" alt="">
+        </div>
+    </section>
+
+    <!-- Acerca de  -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="assets/img/develop-sb.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">Sobre <span>Mi</span></h2>
+            <h3>Desarrollador Full Stack</h3>
+            <p>Soy desarrollador web Full Stack en busca de mi primer empleo como junior. He trabajado en el sector de la seguridad , centro de control orientado a banca. 
+
+                Participe en un proyecto sobre el videojuego Half Life , donde me encargué del diseño 3d de mapas , texturas y diseño web donde nació mi pasión por el Desarrollo web . Gracias al bootcamp de desarrollo web Full Stack ahora puedo dedicarme profesionalmente a ello . 
+                Busco mi primer trabajo como junior para poder seguir aprendiendo y disfrutando de la programación.</p>
+            <a href="#" class="btn">Saber Más</a>
+
+        </div>
+    </section>
     
-    <section id="hero">
-        <h1>Mi <br> Github</h1>
-        <button><a href="https://github.com/Reiker7" target="_blank" rel="noopener noreferrer">Repositorio</a></button>
-        <iframe width="560"  height="315" src="https://www.youtube.com/embed/wuqL6MZv2i8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </section>
+    <!-- Skills  -->
+    <section class="skills" id="skills">
+        <h2 class="heading">Mis <span>Habilidades</span></h2>
+        <div class="skills-container">
+            <div class="skills-box">
+                <i class="bx bx-code-alt"></i>
+                <h3>Front End</h3>
+                <p> HTML / CSS( Bootstrap, Material UI) / Javascript / React</p>
+                <!-- <a href="#" class="btn">Leer Más</a> -->
+            </div>
+            <div class="skills-box">
+                <i class="bx bxs-server"></i>
+                <h3>Back End</h3>
+                <p>NodeJS / Express / MongoDB / MySQL</p>
+                <!-- <a href="#" class="btn">Leer Más</a> -->
+            </div>
 
-    <section id="videojuego">
-        <div class="container">
-                <div class="texto">
-                <h2> Mi primer videojuego </h2>
-                <p>
-                    Mi primer trabajo en el inicio del curso , una toma de contacto con java y programación orientada a objetos.
-                </p>
-                <button><a href="https://gamereiker.onrender.com/" target="_blank" rel="noopener noreferrer">Play</a></button>
-                </div>
-                </div>
         </div>
     </section>
 
-    <section id="lolweb">
-        <div class="container">
-                <div class="texto">
-                <h2> League of legends </h2>
-                <p>
-                    Mi primer primer trabajo personal en React , lo oriente a un videojuego que conocia bastante bien , la gestión de la api fue complicada al inicio pero muy satisfactoria al entenderla al 100%.
-                </p>
-                <button><a href="https://projectrufino.onrender.com/" target="_blank" rel="noopener noreferrer">Diviértete</a></button>
+    <!-- porfolio  -->
+    <section class="porfolio" id="porfolio">
+        <h2 class="heading">Últimos <span>Proyectos</span></h2>
+
+        <div class="porfolio-container">
+            <div class="porfolio-box">
+                <img src="assets/img/cinema.gif" alt="">
+                <div class="porfolio-layer video">
+                    <iframe width="100%"  height="100%" src="https://www.youtube.com/embed/wuqL6MZv2i8" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
+            </div>
+            <div class="porfolio-box">
+                <img src="assets/img/videogame.webp" alt="">
+                <div class="porfolio-layer">
+                    <h4>Videojuego</h4>
+                    <p>Mi primero proyecto al iniciar el bootcamp</p>
+                    <a href="https://gamereiker.onrender.com/" target="_blank"><i class="bx bx-link-external"></i></a>
                 </div>
+            </div>
+
+            <div class="porfolio-box">
+                <img src="assets/img/league.webp" alt="">
+                <div class="porfolio-layer">
+                    <h4>League of legends</h4>
+                    <p>Mi primero proyecto personal en React , consumiendo Api Rest del famoso videojuego .</p>
+                    <a href="https://projectrufino.onrender.com/" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="porfolio-box">
+                <img src="assets/img/viajes.webp" alt="">
+                <div class="porfolio-layer">
+                    <h4>Tratravel</h4>
+                    <p>Proyecto final junto a Data Scientist que orientamos a buscar el mejor destino turístico a través de IA(ChatGPT), Tratamiento de datos en Msql y MongoDB para la gestión de usuarios </p>
+                    <a href="https://tratravel.onrender.com/" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+
         </div>
     </section>
 
-    <section id="tratravel">
-        <div class="container">
-                <div class="texto">
-                <h2> Tratravel </h2>
-                <p>
-                    Trabajo final junto al equipo de data science , nuestra web se enfoco a la inteligencia artificial para ayudarnos a elegir destino turistico.
-                </p>
-                <button><a href="https://tratravel.onrender.com/" target="_blank" rel="noopener noreferrer">Viajar</a></button>
-                </div>
-                </div>
-        </div>
+    <!-- Contacto  -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contacta <span>ahora</span></h2>
+
+        <form action="https://formsubmit.co/zbyr_xdcks32@yutep.com" method="POST">
+            <div class="input-box">
+                <input type="text" placeholder="Nombre" name="nombre">
+                <input type="email" placeholder="Email" name="email">
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Asunto" name="asunto">
+            </div>
+            <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
+            <input type="submit" value="Enviar Mensaje" class="btn">
+            
+        </form>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2022-2023</p>
+    <!-- footer  -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Reiker (Rufino PC) | Reservado los derechos</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
         </div>
     </footer>
+
+    <!-- js  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
