@@ -314,6 +314,8 @@ span {
     height: 35rem;
     width: 100%;
     transition: .5s ease;
+    object-fit: cover;
+    
 }
 .portfolio-box:first-child .portfolio-layer{
     background: linear-gradient(0deg, rgba(0, 0, 0, .1), var(--text-color));
